@@ -10,7 +10,7 @@ setup_3dmd_session.py generates an xml file that can be imported to 3dMD systems
 
 upload_ht_data.py is an example of how the yaml file can be used. Once the yaml file is edited, this script is able to upload the data to a GCP database with the proper gesture tags (refer to example_with_gestures.yaml). This script uses Datalab CLI which was scheduled to be deprecated on August 11, 2022.
 
-frame_metrics.py is another example of how the yaml file can be used. It is important to keep track of frame counts for 3dMD data because exporting/processing is resource heavy. By tracking which gestures have higher frame counts, adjustments to the collection protocol can be made.
+frame_metrics.py is another example of how the yaml file can be used. It is important to keep track of frame counts for 3dMD data because exporting/processing is resource heavy. By tracking which gestures have higher frame counts, adjustments to the collection protocol can be made. To be used after the 3dMD data is exported/processed.
 
 
   
