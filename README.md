@@ -10,7 +10,7 @@ The scripts were originally used for the 3dMDhand system but can be adapted for 
 
 **upload_ht_data.py** is an example of how the session yaml file can be used. Once the session yaml file is edited, this script is able to upload the data to a GCP database with the proper gesture tags (refer to example_with_gestures.yaml). This script uses Datalab CLI which was scheduled to be deprecated on August 11, 2022.
 
-**frame_metrics.py** is another example of how the session yaml file can be used. It is important to keep track of frame counts for 3dMD data because exporting/processing is resource heavy. By tracking which gestures have higher frame counts, adjustments to the collection protocol can be made. 
+**frame_metrics.py** is another example of how the session yaml file can be used. It is important to keep track of frame counts for 3dMD data because exporting/processing is resource heavy. By tracking which gestures have higher frame counts, adjustments to the collection protocol can be made. This script generates a txt file with the total amount of frames collected for a session and how many frames were collected per gesture group.
 
 
   
