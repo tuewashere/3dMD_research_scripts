@@ -7,8 +7,8 @@ import re
 study_id = input('Please enter study ID: ')
 subject_id = input('Please enter subject ID: ')
 session_id = study_id + '_' + subject_id
-session_dir = Path('/workspace/data/' + sessionlabel).iterdir() 
-yaml_path = '/workspace/metadata/' + sessionlabel + '.yaml' 
+session_dir = Path('/directory/' + sessionlabel).iterdir() 
+yaml_path = '/directory/' + sessionlabel + '.yaml' 
 
 total_frame_count = 0
 gestures = {}
