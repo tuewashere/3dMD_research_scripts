@@ -11,9 +11,9 @@ study_id = input('Please enter study ID: ')
 subject_id = input('Please enter subject ID: ')
 sessionlabel = study_id + "_" + subject_id
 hand_tag = 'tag/hand/' + input('What hand did they use? ')
-yaml_path = '/directory/' + sessionlabel + ".yaml"
+yaml_path = '/directory/' + sessionlabel + ".yaml" # directory to session yaml
     
-session_dir = Path('/directory/' + sessionlabel).iterdir()  
+session_dir = Path('/directory/' + sessionlabel).iterdir()   # directory to 3dMD data
 
 
 def add_gesture(unique_id):
@@ -30,7 +30,7 @@ def create_recording(sequence, gesture):
     recording = ('lab datasets recordings create --title ' \
 		+ title + ' --tag tag/subject/' + subject_id + ' --tag tag/study/' + study_id + ' --tag tag/sessionlabel/' \
 		+ sessionlabel + " --tag tag/3dmd" + " --tag tag/gesture/"
-		+ str(gesture) + ' --tag ' + hand_tag + ' --completed --namespace namespace --project project')
+		+ str(gesture) + ' --tag ' + hand_tag + ' --completed --namespace namespace --project project') 
     recording_id = subprocess.check_output(recording, shell=True)
     return (recording_id.decode('utf-8')[76:90])
 
