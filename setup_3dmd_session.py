@@ -14,8 +14,11 @@ study_id = input('Please enter study ID: ')
 subject_id = input('Please enter subject ID: ')
 session_id = study_id + '_' + subject_id
 
-# exportdirectory=%2F%2FNAS%2Fvolume1%2Fdata%2F This part of the sequence_label will need to be changed to whatever directory you export 3dMD data to
 sequence_label = 'exportdirectory=%2F%2FNAS%2Fvolume1%2Fdata%2F%25sessionlabel%25%2F%25sequencelabel%25&exportimagedir=%25exportdirectory%25%2Fimages&exportmeshdir=%25exportdirectory%25%2Fmeshes&exportsrpfile=P%3A%2Fapp%2Fcfg%2FMLHand12.srp&exportsurfaceformat=obj&overlay=default_overlay&sequencelabel='
+
+# This part of the sequence_label will need to be changed to whatever directory you export 3dMD data to
+# exportdirectory=%2F%2FNAS%2Fvolume1%2Fdata%2F 
+# In this example the export directory is /NAS/volume1/data/
 
 xml_path =  '/path/to/session_template.xml' 
 yaml_path = '/path/to/template.yaml'   
