@@ -1,6 +1,6 @@
 <template version="1">
   <session calib="0">
-    <data>default_exportsrpfile=P%3A%2Fapp%2Fcfg%2FMLHand12.srp&amp;default_overlay=MLHand12&amp;sessionlabel=RR34HT00S_template</data>
+    <data>default_exportsrpfile=P%3A%2Fapp%2Fcfg%2FMLHand12.srp&amp;default_overlay=MLHand12&amp;sessionlabel=session_template</data>
     <windows>SP|HORIZONTAL|0.330031|DTP|1|0|Sequence List|DTP|2|0|Sequence Details|Message Log</windows>
     <formsession>cfg/session.html</formsession>
     <formsequence>cfg/sequence_csd.html</formsequence>
