@@ -15,8 +15,8 @@ subject_id = input('Please enter subject ID: ')
 session_id = study_id + '_' + subject_id
 
 sequence_label = 'exportdirectory=%2F%2FNAS%2Fvolume1%2Fdata%2F%25sessionlabel%25%2F%25sequencelabel%25&exportimagedir=%25exportdirectory%25%2Fimages&exportmeshdir=%25exportdirectory%25%2Fmeshes&exportsrpfile=P%3A%2Fapp%2Fcfg%2FMLHand12.srp&exportsurfaceformat=obj&overlay=default_overlay&sequencelabel='
-xml_path =  '/Users/tue/setup_scripts/session_template.xml' 
-yaml_path = '/Users/tue/setup_scripts/template.yaml'   
+xml_path =  '/path/to/session_template.xml' 
+yaml_path = '/path/to/template.yaml'   
 sequence_tree = ET.parse(xml_path)
 root = sequence_tree.getroot()
 id_list = list()
@@ -44,10 +44,6 @@ def create_yaml():
 
 edit_xml()
 create_yaml()
-sequence_tree.write('/Users/tue/setup_scripts/' + session_id + '.xml')
-os.system('cp ' + yaml_path + ' ~/setup_scripts/yamls/' + session_id + '.yaml')
+sequence_tree.write('/directory/' + session_id + '.xml')
+os.system('cp ' + yaml_path + ' /directory/' + session_id + '.yaml')
 print ('Your 3dMD template and yaml file are ready.')
-
-
-
-
