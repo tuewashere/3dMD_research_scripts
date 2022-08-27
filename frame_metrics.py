@@ -56,7 +56,7 @@ def save_metrics(total_fc, gestures_fc, protocol_metrics):
 	f.write((str(gestures)[1:-1]+"\n"))
 	f.write((str(protocol)[1:-1]+"\n"))
 	f.close()
-	os.system('mv ' + sessionlabel + "_metrics.txt" + " /workspace/metadata/")
+	os.system('mv ' + sessionlabel + "_metrics.txt" + " /directory/")
 
 
 for x in session_dir:
