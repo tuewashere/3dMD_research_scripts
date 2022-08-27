@@ -40,6 +40,6 @@ def upload_recording(directory, recording_id):
     
 for x in session_dir:
     unique_id = str(x)
-    upload_recording(x, create_recording(unique_id, add_gesture(unique_id)))
+    upload_recording(x, create_recording(unique_id[-12:], add_gesture(unique_id)))
 
  
