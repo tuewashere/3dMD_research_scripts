@@ -11,9 +11,9 @@ study_id = input('Please enter study ID: ')
 subject_id = input('Please enter subject ID: ')
 sessionlabel = study_id + "_" + subject_id
 hand_tag = 'tag/hand/' + input('What hand did they use? ')
-yaml_path = '/Users/tue/setup_scripts/yamls/' + sessionlabel + ".yaml"
+yaml_path = '/directory/' + sessionlabel + ".yaml"
     
-session_dir = Path('/Users/tue/setup_scripts/yamls/' + sessionlabel).iterdir()  
+session_dir = Path('/directory/' + sessionlabel).iterdir()  
 
 
 def add_gesture(unique_id):
