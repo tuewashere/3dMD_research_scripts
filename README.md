@@ -2,7 +2,7 @@
 I created these scripts to automate tasks when conducting hand tracking research using a 3dMD system (https://3dmd.com/). 
 
 The scripts were originally used for the 3dMDhand system but can be adapted for other 3dMD systems. 
- - A 10 second 4D recording from a 3dMDhand system can be as large as 30GBs. 
+ - A 10 second recording from a 3dMDhand system can be as large as 30GBs. 
  - The 3dMDhand system can export/process ~50,000 frames in 8 hours. 
  - Managing this amount of data and throughput can be difficult and these scripts should help with the collection process
 
