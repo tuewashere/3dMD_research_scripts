@@ -31,14 +31,14 @@ def create_unique_id():
     unique_id = re.sub('\W+',' ',unique_id.replace(" ",""))
     unique_id = hashlib.md5(unique_id.encode())
     unique_id = unique_id.hexdigest()
-    return (str(unique_id))
+    return (str(unique_id)[-12:]) #change this value for length of unique id. Right now it is set to 12
 
 def edit_xml():
     for x in root.iter('sequence'):
         x.text = sequence_label + str(create_unique_id())
-        sequence = x.text[-12:]
+        sequence = x.text[-12:] #change this value for length of unique id. Right now it is set to 12
         id_list.append(sequence)
-        time.sleep(0.12)
+        time.sleep(0.15)
 
 def create_yaml():
     with open (yaml_path, "r") as f:
